@@ -3,3 +3,51 @@
     width: 500px;
     border: 1px solid black;
 }
+#header-img {
+    height: 30px;
+    width: fit-content;
+    
+}
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav-bar {
+    display: flex;
+    flex: 1;
+    justify-content: end;
+}
+#nav-bar ul{
+    display: flex;
+    list-style: none;
+}
+#nav-bar ul li{
+    margin: 0 10px;
+}
+#nav-bar ul li a{
+    text-decoration: none;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#form input{
+    margin-bottom: 20px;
+    width: 250px;
+    padding: 5px;
+
+}
+#form button{
+    margin-bottom: 20px;
+    width: 150px;
+    padding: 10px;
+    background-color: rgba(255, 255, 0, 0.707);
+    border: none;
+    text-align: center;
+    font-weight: bold;
+}
+
