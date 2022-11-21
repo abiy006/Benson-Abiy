@@ -1,11 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --golden-color: rgba(250, 213, 5, 0.778);
+}
+
+body {
+    padding: 10px;
+}
+
 #video {
-    height: 400px;
-    width: 500px;
+    max-height: 500px;
+    max-width: 600px;
     border: 1px solid black;
 }
 #header-img {
     height: 30px;
-    width: fit-content;
+    max-width: 400px;
     
 }
 #header {
@@ -20,13 +34,31 @@
 }
 #nav-bar ul{
     display: flex;
+    justify-content: center;
+    align-items: center;
     list-style: none;
 }
 #nav-bar ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 10px;
 }
 #nav-bar ul li a{
     text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    color: rgb(26, 26, 26);
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
 }
 
 #form{
@@ -34,6 +66,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+#form h1 {
+    text-align: center;
 }
 #form input{
     margin-bottom: 20px;
@@ -45,9 +80,57 @@
     margin-bottom: 20px;
     width: 150px;
     padding: 10px;
-    background-color: rgba(255, 255, 0, 0.707);
+    background-color: var(--golden-color);
     border: none;
     text-align: center;
     font-weight: bold;
 }
 
+.sub-container .item{
+    display: flex;
+    margin-bottom: 20px;
+}
+.sub-container .item i {
+    font-size: calc(1vw + 2.5em);
+    margin: 10px;
+    width: 200px;
+    color: var(--golden-color);
+    text-align: center;
+}
+
+.pricing-section {
+    display: flex;
+
+}
+.pricing-section .price-tile {
+    border: 1px solid gray;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+}
+.pricing-section .price-tile h3 {
+    background-color: lightgray;
+    font-weight: 300;
+    font-size: calc(1vw + 12px);
+    padding-bottom: 5px;
+}
+
+.pricing-section .price-tile ul {
+    list-style: none;
+}
+
+.pricing-section .price-tile button {
+    padding: 5px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: var(--golden-color);
+    border: none;
+}
+
+.price {
+    margin: 20px;
+}
